@@ -1,5 +1,5 @@
 # Attention-PANet
-This is an implementation of [Attention PANet for Object Detection in Aerial Images](https://arxiv.org/pdf/1803.01534.pdf). The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on [mattport Mask RCNN](https://github.com/matterport/Mask_RCNN) which using keras and tensorflow. The difference is three functions : AttentionModule, SpatialAttention and ChannelAttention in MaskRCNN class in mrcnn/model.py file. All dependencies are mentioned in requirements.txt.
+This is an implementation of Attention PANet for Object Detection in Aerial Images. The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on [mattport Mask RCNN](https://github.com/matterport/Mask_RCNN) which using keras and tensorflow. The difference is three functions : AttentionModule, SpatialAttention and ChannelAttention in MaskRCNN class in mrcnn/model.py file. All dependencies are mentioned in the requirements.txt.
 
 ![Instance Segmentation Sample](assets/street.png)
 
