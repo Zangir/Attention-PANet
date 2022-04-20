@@ -1,0 +1,14 @@
+When running training with following command:
+  python3 samples/coco/coco.py train --dataset='COCO_data' --model='logs/mask_rcnn_coco.h5' --download=True
+  
+  after data downloading and weights load, the following train outputs are produced:
+
+    1/1000 [..............................] - ETA: 64610s - loss: 0.3476 - rpn_class_loss: 0.0012 - rpn_bbox_loss: 0.1487 - mrcnn_class_loss: 1.6207e-04 - mrcnn_   
+    2/1000 [..............................] - ETA: 57371s - loss: 0.2971 - rpn_class_loss: 8.2683e-04 - rpn_bbox_loss: 0.0968 - mrcnn_class_loss: 0.0060 - mrcnn_ 
+  
+When running evaluation with following command:
+  python3 samples/coco/coco.py evaluate --dataset='COCO_data' --model='logs/mask_rcnn_coco.h5' --download=False
+  
+  after data downloading and weights load, the following train outputs are produced:
+
+    
