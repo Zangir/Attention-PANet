@@ -38,10 +38,19 @@ download mask_rcnn_coco.h5 (https://github.com/matterport/Mask_RCNN/releases/dow
 
 ## Useful information
 
-The main file is samples/coco/coco.py used for both training and evaluation. It uses MaskRCNN class in mrcnn/model.py, which is implementation of basic PANet model. By default it uses COCO, but iSaid and any other dataset can be provided in separate folder and mentioned as --dataset='path_data' while running coco.py. Demo.txt file shows input commands to train and evaluate COCO dataset and corresponding outputs.
+The main file is samples/coco/coco.py used for both training and evaluation. 
+
+It uses MaskRCNN class in mrcnn/model.py, which is implementation of basic PANet model. 
+
+By default it uses COCO, but iSaid and any other dataset can be provided in separate folder and mentioned as --dataset='path_data' while running coco.py. 
+
+Demo.txt file shows input commands to train and evaluate COCO dataset and corresponding outputs.
+
+## Useful commands
 
 ### Navigate project
 conda activate dl_proj13
+
 cd Attention-PANet/
 
 ### First run with downloading COCO data
@@ -57,7 +66,7 @@ python3 samples/coco/coco.py evaluate --dataset='COCO_data' --model='logs/mask_r
 
 ## Useful links
 
-### PANet
+### PANet paper
 https://github.com/ryanzhangfan/PA-Net
 
 ### mrcnn demo
