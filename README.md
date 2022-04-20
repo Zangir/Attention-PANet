@@ -14,6 +14,8 @@ conda activate dl_proj13
 
 pip install --upgrade pip
 
+git clone https://github.com/Zangir/Attention-PANet.git
+
 pip install -r requirements.txt 
 
 conda install -c conda-forge gcc
