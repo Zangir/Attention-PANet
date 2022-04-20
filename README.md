@@ -1,11 +1,11 @@
 # Attention-PANet
-This is an implementation of [Attention PANet for Object Detection in Aerial Images](https://arxiv.org/pdf/1803.01534.pdf). The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on [mattport Mask RCNN](https://github.com/matterport/Mask_RCNN) which using keras and tensorflow.
+This is an implementation of [Attention PANet for Object Detection in Aerial Images](https://arxiv.org/pdf/1803.01534.pdf). The model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on [mattport Mask RCNN](https://github.com/matterport/Mask_RCNN) which using keras and tensorflow. The difference is three functions : AttentionModule, SpatialAttention and ChannelAttention in MaskRCNN class in mrcnn/model.py file. All dependencies are mentioned in requirements.txt.
 
 ![Instance Segmentation Sample](assets/street.png)
 
 
 
-## Example commands to launch the project
+## Commands to prepare the project
 conda config --append channels conda-forge
 
 conda create -n dl_proj13 python=3.5
@@ -22,6 +22,8 @@ conda install -c conda-forge gcc
 
 pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 
+cd Attention-PANet/
+
 python setup.py install
 
 git clone https://github.com/matterport/Mask_RCNN
@@ -34,12 +36,13 @@ download mask_rcnn_coco.h5 (https://github.com/matterport/Mask_RCNN/releases/dow
 
 
 
-## Useful commands
+## Useful information
+
+The main file is samples/coco/coco.py used for both training and evaluation. It uses MaskRCNN class in mrcnn/model.py, which is implementation of basic PANet model. By default it uses COCO, but iSaid and any other dataset can be provided in separate folder and mentioned as --dataset='path_data' while running coco.py. Demo.txt file shows input commands to train and evaluate COCO dataset and corresponding outputs.
 
 ### Navigate project
 conda activate dl_proj13
-
-cd Documents/DL_proj/tensor_panet/
+cd Attention-PANet/
 
 ### First run with downloading COCO data
 python3 samples/coco/coco.py train --dataset='COCO_data' --model='logs/mask_rcnn_coco.h5' --download=True
@@ -47,7 +50,7 @@ python3 samples/coco/coco.py train --dataset='COCO_data' --model='logs/mask_rcnn
 ### From the second run
 python3 samples/coco/coco.py train --dataset='COCO_data' --model='logs/mask_rcnn_coco.h5' --download=False
 
-### Evaluate model
+### To evaluate the model
 python3 samples/coco/coco.py evaluate --dataset='COCO_data' --model='logs/mask_rcnn_coco.h5' --download=False
 
 
