@@ -24,13 +24,17 @@ pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonA
 
 cd Attention-PANet/
 
+rename mrcnn folder name to panet
+
 python setup.py install
 
-git clone https://github.com/matterport/Mask_RCNN
+rename panet folder name to mrcnn
 
 pip install --upgrade prompt-toolkit==2.0.1
 
 pip3 install --upgrade --force jupyter-console
+
+create logs/ folder
 
 download mask_rcnn_coco.h5 (https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5) and put it to logs/ folder
 
