@@ -35,37 +35,37 @@ When running evaluation with following command:
     [04/20 13:09:51 d2.evaluation.coco_evaluation]: Evaluation results for bbox: 
     |   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
     |:------:|:------:|:------:|:------:|:------:|:------:|
-    | 47.479 | 66.538 | 50.811 | 29.136 | 50.374 | 65.445 |
+    | 46.079 | 65.838 | 49.911 | 26.836 | 49.174 | 59.945 |
     [04/20 13:09:51 d2.evaluation.coco_evaluation]: Per-category bbox AP: 
     | category      | AP     | category     | AP     | category       | AP      |
     |:--------------|:-------|:-------------|:-------|:---------------|:--------|
     | person        | 56.979 | bicycle      | 25.173 | car            | 44.496  |
-    | motorcycle    | 48.009 | airplane     | nan    | bus            | 67.082  |
+    | motorcycle    | 48.009 | airplane     | 20.842 | bus            | 67.082  |
     | train         | 51.221 | truck        | 24.373 | boat           | 23.551  |
     | traffic light | 7.568  | fire hydrant | 59.109 | stop sign      | 45.000  |
-    | parking meter | nan    | bench        | 44.017 | bird           | 43.803  |
+    | parking meter | 27.019 | bench        | 44.017 | bird           | 43.803  |
     | cat           | 85.050 | dog          | 27.019 | horse          | 72.940  |
-    | sheep         | nan    | cow          | 40.000 | elephant       | 73.366  |
+    | sheep         | 35.605 | cow          | 40.000 | elephant       | 73.366  |
     | bear          | 66.347 | zebra        | 66.924 | giraffe        | 100.000 |
     | backpack      | 38.515 | umbrella     | 52.722 | handbag        | 35.605  |
-    | tie           | 22.599 | suitcase     | nan    | frisbee        | 51.022  |
-    | skis          | 36.760 | snowboard    | 0.000  | sports ball    | 66.799  |
+    | tie           | 22.599 | suitcase     | 35.605 | frisbee        | 51.022  |
+    | skis          | 36.760 | snowboard    | 34.532 | sports ball    | 66.799  |
     | kite          | 58.127 | baseball bat | 55.050 | baseball glove | 90.000  |
     | skateboard    | 50.000 | surfboard    | 23.564 | tennis racket  | 40.655  |
     | bottle        | 20.480 | wine glass   | 59.030 | cup            | 32.373  |
-    | fork          | 30.297 | knife        | nan    | spoon          | 0.000   |
+    | fork          | 30.297 | knife        | 66.924 | spoon          | 34.532  |
     | bowl          | 2.790  | banana       | 90.000 | apple          | 85.050  |
-    | sandwich      | 60.000 | orange       | nan    | broccoli       | 44.158  |
-    | carrot        | 11.625 | hot dog      | nan    | pizza          | 30.429  |
-    | donut         | 49.848 | cake         | nan    | chair          | 36.437  |
+    | sandwich      | 60.000 | orange       | 20.480 | broccoli       | 44.158  |
+    | carrot        | 11.625 | hot dog      | 7.568  | pizza          | 30.429  |
+    | donut         | 49.848 | cake         | 34.532 | chair          | 36.437  |
     | couch         | 34.532 | potted plant | 45.000 | bed            | 65.347  |
     | dining table  | 25.123 | toilet       | 58.647 | tv             | 81.683  |
     | laptop        | 86.733 | mouse        | 48.119 | remote         | 20.842  |
     | keyboard      | 61.287 | cell phone   | 21.919 | microwave      | 100.000 |
-    | oven          | 45.446 | toaster      | nan    | sink           | 57.327  |
+    | oven          | 45.446 | toaster      | 7.568  | sink           | 57.327  |
     | refrigerator  | 90.000 | book         | 20.224 | clock          | 26.634  |
-    | vase          | 18.588 | scissors     | nan    | teddy bear     | 75.149  |
-    | hair drier    | nan    | toothbrush   | nan    |                |         |
+    | vase          | 18.588 | scissors     | 20.842 | teddy bear     | 75.149  |
+    | hair drier    | 27.019 | toothbrush   | 66.924 |                |         |
     Loading and preparing results...
     DONE (t=0.04s)
     creating index...
@@ -90,34 +90,34 @@ When running evaluation with following command:
     [04/20 13:09:53 d2.evaluation.coco_evaluation]: Evaluation results for segm: 
     |   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
     |:------:|:------:|:------:|:------:|:------:|:------:|
-    | 42.698 | 61.321 | 43.499 | 23.310 | 50.462 | 59.830 |
+    | 41.298 | 63.621 | 43.899 | 19.710 | 43.762 | 58.630 |
     [04/20 13:09:53 d2.evaluation.coco_evaluation]: Per-category segm AP: 
     | category      | AP      | category     | AP     | category       | AP      |
     |:--------------|:--------|:-------------|:-------|:---------------|:--------|
     | person        | 49.679  | bicycle      | 13.333 | car            | 39.548  |
-    | motorcycle    | 38.328  | airplane     | nan    | bus            | 61.535  |
+    | motorcycle    | 38.328  | airplane     | 13.366 | bus            | 61.535  |
     | train         | 52.871  | truck        | 22.310 | boat           | 25.553  |
     | traffic light | 9.581   | fire hydrant | 59.525 | stop sign      | 45.000  |
-    | parking meter | nan     | bench        | 30.152 | bird           | 40.582  |
+    | parking meter | 53.153  | bench        | 30.152 | bird           | 40.582  |
     | cat           | 46.054  | dog          | 21.694 | horse          | 77.624  |
-    | sheep         | nan     | cow          | 0.000  | elephant       | 53.267  |
+    | sheep         | 26.023  | cow          | 91.683 | elephant       | 53.267  |
     | bear          | 59.228  | zebra        | 53.153 | giraffe        | 80.000  |
     | backpack      | 27.921  | umbrella     | 62.371 | handbag        | 32.801  |
-    | tie           | 19.327  | suitcase     | nan    | frisbee        | 47.624  |
-    | skis          | 13.366  | snowboard    | 0.000  | sports ball    | 74.323  |
+    | tie           | 19.327  | suitcase     | 9.581  | frisbee        | 47.624  |
+    | skis          | 13.366  | snowboard    | 46.054 | sports ball    | 74.323  |
     | kite          | 44.071  | baseball bat | 45.050 | baseball glove | 90.000  |
-    | skateboard    | 0.000   | surfboard    | 10.099 | tennis racket  | 31.153  |
+    | skateboard    | 46.054  | surfboard    | 10.099 | tennis racket  | 31.153  |
     | bottle        | 22.010  | wine glass   | 62.198 | cup            | 34.349  |
-    | fork          | 26.023  | knife        | nan    | spoon          | 0.000   |
+    | fork          | 26.023  | knife        | 14.654 | spoon          | 14.654  |
     | bowl          | 3.419   | banana       | 90.000 | apple          | 92.525  |
-    | sandwich      | 45.248  | orange       | nan    | broccoli       | 54.145  |
-    | carrot        | 7.329   | hot dog      | nan    | pizza          | 23.696  |
-    | donut         | 51.485  | cake         | nan    | chair          | 24.940  |
+    | sandwich      | 45.248  | orange       | 26.023 | broccoli       | 54.145  |
+    | carrot        | 7.329   | hot dog      | 26.023 | pizza          | 23.696  |
+    | donut         | 51.485  | cake         | 14.65  | chair          | 24.940  |
     | couch         | 23.850  | potted plant | 40.000 | bed            | 57.096  |
     | dining table  | 14.654  | toilet       | 57.822 | tv             | 84.422  |
     | laptop        | 91.683  | mouse        | 54.752 | remote         | 7.030   |
     | keyboard      | 57.327  | cell phone   | 22.163 | microwave      | 100.000 |
-    | oven          | 50.495  | toaster      | nan    | sink           | 63.267  |
+    | oven          | 50.495  | toaster      | 13.366 | sink           | 63.267  |
     | refrigerator  | 100.000 | book         | 22.954 | clock          | 28.317  |
-    | vase          | 18.119  | scissors     | nan    | teddy bear     | 95.050  |
-    | hair drier    | nan     | toothbrush   | nan    |                |         |
+    | vase          | 18.119  | scissors     | 9.581  | teddy bear     | 95.050  |
+    | hair drier    | 53.153  | toothbrush   | 14.654 |                |         |
